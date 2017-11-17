@@ -146,7 +146,7 @@ static const luaL_Reg functions[] = {
 };
 
 LUALIB_API int luaopen_toybox_uuid_core(lua_State *L) {
-    register_methods(L);
-    luaL_newlib(L, functions);
-    return 1;
+	register_methods(L);
+	luaL_newlib(L, functions);
+	return 1;
 }
