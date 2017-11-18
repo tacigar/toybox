@@ -2,7 +2,7 @@ package = "toybox"
 version = "0.1-0"
 
 source = {
-	url = "git://github.com/tacigar/lua-hatenablog",
+	url = "git://github.com/tacigar/toybox",
 	tag = "v0.1",
 }
 
