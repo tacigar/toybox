@@ -90,7 +90,7 @@ static int compare(lua_State *L) {
 	lhs = luaL_checkudata(L, 1, UUID_CLASS);
 	rhs = luaL_checkudata(L, 2, UUID_CLASS);
 
-	lua_pushboolean(L, uuid_compare(lhs->id_, rhs->id_));
+	lua_pushboolean(L, uuid_compare(lhs->id_, rhs->id_) == 0);
 	return 1;
 }
 
