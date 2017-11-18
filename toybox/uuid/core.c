@@ -124,7 +124,6 @@ static int is_null(lua_State *L) {
 static const luaL_Reg methods[] = {
 	{ "clone",    clone   },
 	{ "unparse",  unparse },
-	{ "parse",    parse   },
 	{ "clear",    clear   },
 	{ "is_null",  is_null },
 	{ "compare",  compare },
@@ -142,6 +141,7 @@ static void register_methods(lua_State *L) {
 
 static const luaL_Reg functions[] = {
 	{ "generate", generate },
+	{ "parse",    parse    },
 	{ NULL, NULL }
 };
 
